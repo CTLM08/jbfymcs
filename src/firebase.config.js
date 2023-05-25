@@ -18,10 +18,21 @@ export const app = firebase.initializeApp(firebaseConfig);
 export const firestore = app.firestore();
 export const auth = app.auth();
 export const provider = new GoogleAuthProvider();
+export const signOut = () => {
+  auth.signOut();
+};
 export const signInWithGoogle = (navigate) => {
   auth
     .signInWithPopup(provider)
-    .then(() => {})
+    .then(async ({ user }) => {
+      if (user.uid == "VzMj9MZAW3RNFQyskyXcdQJSgDr1") {
+        navigate("/admin");
+      } else {
+        signOut();
+        navigate("/");
+        alert("You are not an admin");
+      }
+    })
     .catch((error) => {
       console.log(error);
     });

@@ -28,16 +28,17 @@ function NavItem({ children, name, to }) {
 
 function Navbar() {
   return (
-    <nav className="w-full h-24 bg-white flex text-bold text-xl relative z-[9999]">
-      <img src={SchoolLogo} className="w-32" />
+    <nav className="w-full h-24 bg-white flex text-bold items-center pl-4 text-xl relative z-[9999]">
+      <Link to="/">
+        <img src={SchoolLogo} className="w-28" />
+      </Link>
       <div className="justify-end items-center flex w-full h-24 gap-16 pr-8">
-        <Link>
-          {" "}
-          <button href="/">
-            <div className="text-2xl relative after:absolute after:w-4 after:h-1 after:rounded-full after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:bg-blue-500">
+        <Link to="/">
+          <div>
+            <button className="text-2xl relative after:absolute after:w-4 after:h-1 after:rounded-full after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:bg-blue-500">
               首页
-            </div>
-          </button>
+            </button>
+          </div>
         </Link>
         <NavItem name="关于我们" to="/about">
           <li className="px-2 py-3 pt-0">电协历史</li>

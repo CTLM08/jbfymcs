@@ -43,3 +43,23 @@ nav > * > * > * > * {
 .indicators > .active {
      @apply bg-white
 }
+
+.custom-shape-divider-top-1685012790 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1685012790 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 35px;
+}
+
+.custom-shape-divider-top-1685012790 .shape-fill {
+  fill: #FFFFFF;
+}

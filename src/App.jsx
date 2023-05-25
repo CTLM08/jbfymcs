@@ -35,7 +35,7 @@ const App = () => {
     <appContext.Provider value={{ user, userData, uid }}>
       <div className="w-full min-h-screen flex flex-col text-gray-700">
         <Navbar />
-        <main>
+        <main className="flex-1 flex flex-col">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutUs />} />
