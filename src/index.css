@@ -29,7 +29,7 @@
 }
 
 .special-font,
-nav * {
+nav > * > * > * > * {
   font-family: "Ma Shan Zheng", cursive;
 }
 .bruh{

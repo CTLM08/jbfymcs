@@ -3,9 +3,9 @@ import SchoolLogo from "../../public/assets/images/logo.svg";
 import { Icon } from "@iconify/react";
 const Footer = () => {
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col w-full px-12">
       <div class="inline-flex items-center justify-center w-full">
-        <hr class="w-64 h-1 my-8 bg-gray-500 border-0 rounded" />
+        <hr class="w-64 h-1 my-4 bg-gray-500 border-0 rounded" />
         <div class="absolute px-4 -translate-x-1/2 bg-white left-1/2 ">
           <svg
             aria-hidden="true"
@@ -22,29 +22,25 @@ const Footer = () => {
         </div>
       </div>
 
-      <main className="flex flex-row p-5 items-center justify-between">
+      <main className="flex flex-row items-center justify-between">
         <div>
-          <img src={SchoolLogo} className="w-32" />
+          <img src={SchoolLogo} className="w-24" />
         </div>
-        <div className="flex items-center">
-          © 2022 ‒ 2023 <p className="text-[#577AF6]">新山宽柔中学电脑协会</p>{" "}
+        <div className="flex items-center gap-1 text-sm">
+          © 2022 ‒ 2023{" "}
+          <span className="text-[#577AF6]">新山宽柔中学电脑协会</span>
+          {"  "}
           版权所有
         </div>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-6">
           <a>
-            <Icon
-              icon="akar-icons:instagram-fill"
-              className="text-3xl h-8 w-8"
-            />
+            <Icon icon="uil:instagram" className="w-5 h-5" />
           </a>
           <a>
-            <Icon
-              icon="akar-icons:facebook-fill"
-              className="text-3xl h-8 w-8"
-            />
+            <Icon icon="uil:facebook" className="w-5 h-5" />
           </a>
           <a>
-            <Icon icon="akar-icons:youtube-fill" className="text-3xl h-8 w-8" />
+            <Icon icon="uil:youtube" className="w-5 h-5" />
           </a>
         </div>
       </main>
