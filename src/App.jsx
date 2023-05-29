@@ -33,7 +33,7 @@ const App = () => {
   }, []);
   return (
     <appContext.Provider value={{ user, userData, uid }}>
-      <div className="w-full min-h-screen flex flex-col text-gray-700">
+      <div className="w-full min-h-screen flex flex-col text-gray-700 relative">
         <Navbar />
         <main className="flex-1 flex flex-col">
           <Routes>

@@ -39,9 +39,11 @@ const Login = () => {
             欢迎,来到电脑协会
           </div>
           <div>
-            <button className="w-full special-font text-xl mt-5 bg-[#577AF6] text-white flex flex-row items-center justify-center h-8 rounded-md shadow-md p-5">
-              去到管理界面
-            </button>
+            <Link to="/admin">
+              <button className="w-full special-font text-xl mt-5 bg-[#577AF6] text-white flex flex-row items-center justify-center h-8 rounded-md shadow-md p-5">
+                去到管理界面
+              </button>
+            </Link>
             <p className="text-sm flex mt-1">
               调整<p className="text-[#577AF6] font-bold">理事</p>
             </p>

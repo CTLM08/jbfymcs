@@ -15,7 +15,7 @@ const Footer = () => {
           版权所有
         </div>
         <div className="flex items-center gap-6">
-          <a>
+          <a href="https://instagram.com/fymcs_jb?igshid=MzRlODBiNWFlZA==">
             <Icon icon="uil:instagram" className="w-5 h-5" />
           </a>
           <a>
