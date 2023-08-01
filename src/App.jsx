@@ -11,6 +11,7 @@ import Login from "./pages/Login";
 import Admin from "./pages/Admin";
 import { auth, firestore } from "./firebase.config";
 import { onAuthStateChanged } from "firebase/auth";
+import StudyGroup from "./pages/StudyGroup";
 
 export const appContext = createContext({
   user: null,
@@ -35,7 +36,7 @@ const App = () => {
     <appContext.Provider value={{ user, userData, uid }}>
       <div className="w-full min-h-screen flex flex-col text-gray-700 relative">
         <Navbar />
-        <main className="flex-1 flex flex-col">
+        <main className="flex-1 flex flex-col mt-24">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutUs />} />
@@ -43,6 +44,7 @@ const App = () => {
             <Route path="/learn" element={<Learn />} />
             <Route path="/login" element={<Login />} />
             <Route path="/admin" element={<Admin />} />
+            <Route path="/:id" element={<StudyGroup />} />
           </Routes>
         </main>
         <Footer />

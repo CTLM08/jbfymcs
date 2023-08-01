@@ -113,7 +113,7 @@ const Admin = () => {
                 <Icon icon="uil:multiply" className="w-6 h-6" />
               </button>
             </div>
-            0
+
             <div className="text-5xl text-[#577AF6] special-font flex-1 flex items-center justify-center">
               {change}
             </div>

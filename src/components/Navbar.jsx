@@ -28,7 +28,7 @@ function NavItem({ children, name, to }) {
 
 function Navbar() {
   return (
-    <nav className="w-full h-24 bg-white flex text-bold items-center pl-4 text-xl relative z-[9999]">
+    <nav className="w-full h-24 bg-white flex text-bold items-center pl-4 text-xl fixed shadow-md z-[9999]">
       <Link to="/">
         <img src={SchoolLogo} className="w-28" />
       </Link>
